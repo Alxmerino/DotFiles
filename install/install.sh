@@ -12,8 +12,6 @@ echo "downloading cli and vim items"
 sh shell.sh
 echo "downloading homebrew and cask apps"
 sh apps.sh
-echo "cloning my repos"
-sh repos.sh
 echo "installing node"
 sh nodejs.sh
 echo "setting up npm global packages"
