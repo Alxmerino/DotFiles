@@ -1,4 +1,4 @@
-# My .(Configuration) Files and other goodies
+# My .(Conf) Files and other goodies
 
 Used to quickly set up a new machine
 
