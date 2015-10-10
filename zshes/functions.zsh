@@ -7,3 +7,12 @@ syncdb ()
 	echo "Syncing $env DB"
 	remotee-sync --env=$env -d -v
 }
+
+# Git
+reset-hard()
+{
+	echo "Reset to which branch?"
+	read branch
+	git reset --hard origin/$branch
+	echo "Reset branch, don't let it happen again!"
+}

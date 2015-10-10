@@ -1,0 +1,5 @@
+alias commit='git commit'
+alias fetch='git fecth'
+alias clean='git clean -f -d'
+alias stash='git stash'
+alias stash:list='git stash list --date=local'
