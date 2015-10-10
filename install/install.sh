@@ -16,6 +16,10 @@ echo "installing node"
 sh nodejs.sh
 echo "setting up npm global packages"
 sh npms.sh
+echo "install python"
+brew install python
+echo "install mackup"
+brew install mackup
 echo "restoring mackup settings"
 $dry mackup restore
 echo "installing global composer packages"
