@@ -2,7 +2,7 @@
 Oh, new computer?? You fancy huh?
 
 ## Disclaimer 
-This whole repo was largely inspired(stolen) including this README from https://github.com/khaliqgant/Configuration-Files by @khaliqgant and modified to suit my needs.
+This whole repo was largely inspired(stolen) including this README from https://github.com/khaliqgant/Configuration-Files by [@khaliqgant](https://github.com/khaliqgant/) and modified to suit my needs.
 
 ## Steps
 1. Run Tests first! Then, Install Dropbox & Git
