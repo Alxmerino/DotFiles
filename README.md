@@ -26,7 +26,10 @@ Used to quickly set up a new machine
 * [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Iterm2](https://www.iterm2.com/)
 
-### Todo
-* Add Iterm color scheme
-* Add conf files
-* Add everything
+## Setup
+* First time setup (RUN TEST FIRST! EVERYTIME!!!)
+  * Run the install.sh script inside the install directory.
+* Create symlinks to these files for version controlled config files. e.g.
+````
+ln -s ~/DotFiles/.zshrc ~/
+````
