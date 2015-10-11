@@ -29,7 +29,7 @@ Tests pass a ```--dry-run``` flag to the scripts which simply outputs and doesnâ
 with the ```--dry-run``` in progress
 
 ## References
-* Add iTerm and sublime settings screenshot
+* Add these settings to iTerm2 https://www.evernote.com/l/Ak3DMZprolxH5Il3UPeCeBIP0omCuIHThcQ
 
 ## Known Issues
 * Using nvm to manage node.js versions
