@@ -24,4 +24,6 @@ echo "restoring mackup settings"
 $dry mackup restore
 echo "installing global composer packages"
 sh composer.sh
+echo "syncing sublime packages"
+sh sublime.sh
 echo "You're good to go"
