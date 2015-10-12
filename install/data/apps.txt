@@ -20,3 +20,5 @@ recordit
 dash
 mou
 skype
+spectacle
+divvy
