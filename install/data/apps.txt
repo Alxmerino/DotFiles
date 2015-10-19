@@ -22,3 +22,6 @@ mou
 skype
 spectacle
 divvy
+diskwave
+appcleaner
+skitch
