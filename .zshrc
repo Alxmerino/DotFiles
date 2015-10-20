@@ -98,3 +98,7 @@ source ~/DotFiles/zshes/path.zsh
 
 # Functions
 source ~/DotFiles/zshes/functions.zsh
+
+# Aliases
+# restart the shell
+alias restart='exec -l $SHELL'

@@ -1,4 +1,5 @@
 ## Items to fix after first setup
-- Sublime links
+- Sublime Text 3 sym links
 - Mackup restore
 - Node
+- Compass
