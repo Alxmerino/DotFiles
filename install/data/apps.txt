@@ -5,7 +5,6 @@ github-desktop
 sublime-text
 mamp
 transmit
-sequel-pro
 alfred
 zooom
 bartender
@@ -25,3 +24,4 @@ divvy
 diskwave
 appcleaner
 skitch
+keka
