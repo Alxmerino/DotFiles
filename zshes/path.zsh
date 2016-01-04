@@ -6,7 +6,8 @@ export PATH=~/npm/bin:$PATH #Because installed node w/o homebrew add the npm pat
 export PATH=~/.node/bin:$PATH #add path for npm install modules
 
 # The next line updates PATH for the Google Cloud SDK.
-source $HOME/google-cloud-sdk/google-cloud-sdk/path.zsh.inc
+# source $HOME/google-cloud-sdk/google-cloud-sdk/path.zsh.inc
 
 # The next line enables bash completion for gcloud.
-source $HOME/google-cloud-sdk/google-cloud-sdk/completion.zsh.inc
+# source $HOME/google-cloud-sdk/google-cloud-sdk/completion.zsh.inc
+source /usr/local/opt/nvm/nvm.sh
