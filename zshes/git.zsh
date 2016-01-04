@@ -1,4 +1,4 @@
-alias commit='git commit'
+alias cm='git commit'
 alias fetch='git fetch'
 alias clean='git clean -f -d'
 alias stash='git stash'
