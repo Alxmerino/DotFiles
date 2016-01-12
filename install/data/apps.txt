@@ -17,7 +17,7 @@ hipchat
 1password
 recordit
 dash
-mou
+macdown
 skype
 spectacle
 divvy
