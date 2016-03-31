@@ -22,3 +22,9 @@ reset-hard()
 checkConf() {
     sed -n "/"$1"/,/^$/p" ~/.ssh/config;
 }
+
+# checks weather with curl
+# args city, zip, moon
+weather() {
+	curl wttr.in/$1
+}
