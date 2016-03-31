@@ -16,3 +16,9 @@ reset-hard()
 	git reset --hard origin/$branch
 	echo "Reset branch, don't let it happen again!"
 }
+
+# Finds a specific ssh config
+# e.g. checkConf amayamedia
+checkConf() {
+    sed -n "/"$1"/,/^$/p" ~/.ssh/config;
+}
