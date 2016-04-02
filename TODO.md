@@ -3,3 +3,4 @@
 - Mackup restore
 - Node
 - Compass
+- Brew wget and others
