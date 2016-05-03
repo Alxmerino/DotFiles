@@ -11,9 +11,7 @@ syncdb ()
 # Git
 reset-hard()
 {
-	echo "Reset to which branch?"
-	read branch
-	git reset --hard origin/$branch
+	git reset --hard origin/$1
 	echo "Reset branch, don't let it happen again!"
 }
 
