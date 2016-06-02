@@ -26,3 +26,8 @@ checkConf() {
 weather() {
 	curl wttr.in/$1
 }
+
+# Open active directory in sublime
+stt() {
+	sublime ./$1
+}
