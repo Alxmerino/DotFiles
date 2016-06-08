@@ -16,3 +16,4 @@ kill -9 $(lsof -ti tcp:3000)
 ```
 
 Start using the port again or have a burger or something. 🤔
+Source: [StackOverflow](http://askubuntu.com/questions/346394/how-to-write-a-shscript-to-kill-9-a-pid-which-is-found-via-lsof-i)
