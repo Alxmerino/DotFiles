@@ -29,5 +29,5 @@ weather() {
 
 # Open active directory in sublime
 stt() {
-	sublime ./$1
+	sublime $1
 }
