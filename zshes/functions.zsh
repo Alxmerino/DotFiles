@@ -27,7 +27,11 @@ weather() {
 	curl wttr.in/$1
 }
 
-# Open active directory in sublime
+# Open directory in sublime
 stt() {
-	sublime $1
+	if [[ "$1" == "" ]]; then
+		sublime ./
+	else
+		sublime $1
+	fi
 }
