@@ -13,7 +13,7 @@ flux
 github-desktop
 glueprint
 google-chrome
-hipchat
+hyper
 iterm2
 java
 keka
