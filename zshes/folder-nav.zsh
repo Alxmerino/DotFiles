@@ -13,14 +13,23 @@ mkd() {
     cd $1
 }
 
+
+alias bashrc="[ $(find . -maxdepth 2 -name .bashrc-local) ] && source $(find . -maxdepth 2 -name .bashrc-local) && echo 'local bashrc loaded'"
+alias show:bashrc="[ $(find . -maxdepth 2 -name .bashrc-local) ] && cat $(find . -maxdepth 2 -name .bashrc-local)"
+
 # Loads local bash
 load_local_bash(){
-    Files='./.bashrc.local';
+    Files=('./.bashrc.local' './.bashrc-local');
 
-    if [ -f $Files ]; then
-        source $Files;
-        cat $Files;
-    fi
+    for File in $Files
+    do
+        if [ -f $File ]; then
+            source $File;
+            echo 'Local bashrc loaded';
+            cat $File;
+        fi
+    done
+
 }
 
 # Extend buildin cd
