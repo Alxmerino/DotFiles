@@ -98,6 +98,30 @@ source ~/DotFiles/zshes/git.zsh
 # Path exports
 source ~/DotFiles/zshes/path.zsh
 
+# Calling nvm use automatically in a directory with a .nvmrc file
+# This calls `nvm use` automatically whenever we enter a 
+# directory that contains an .nvmrc file with a string 
+# telling nvm which node to use
+# https://github.com/creationix/nvm#zsh
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" != "N/A" ] && [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm install
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 # Functions
 source ~/DotFiles/zshes/functions.zsh
 
