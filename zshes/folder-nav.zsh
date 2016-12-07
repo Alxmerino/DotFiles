@@ -19,16 +19,11 @@ alias show:bashrc="[ $(find . -maxdepth 2 -name .bashrc-local) ] && cat $(find .
 
 # Loads local bash
 load_local_bash(){
-    Files=('./.bashrc.local' './.bashrc-local');
+    File='./.bashrc-local';
 
-    for File in $Files
-    do
-        if [ -f $File ]; then
-            source $File;
-            echo 'Local bashrc loaded';
-            cat $File;
-        fi
-    done
+    if [ -f $File ]; then
+        source $File;
+    fi
 
 }
 
