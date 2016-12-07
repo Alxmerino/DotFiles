@@ -84,8 +84,6 @@ source $ZSH/oh-my-zsh.sh
 alias mysql="/Applications/MAMP/Library/bin/mysql"
 alias mysqldump="/Applications/MAMP/Library/bin/mysqldump"
 
-export PATH=/usr/local/php5/bin:$PATH
-
 # Folder Nav
 source ~/DotFiles/zshes/folder-nav.zsh
 
