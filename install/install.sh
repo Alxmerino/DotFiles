@@ -24,6 +24,8 @@ echo "install mackup"
 brew install mackup
 echo "restoring mackup settings"
 $dry mackup restore
+echo "install AWS CLI"
+brew install awscli
 echo "installing global composer packages"
 sh composer.sh
 echo "syncing sublime packages"
