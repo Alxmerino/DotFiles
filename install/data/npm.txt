@@ -1,5 +1,3 @@
-grunt-cli
 gulp
 remotee-sync
-bower
 npmrc
