@@ -1,3 +1,3 @@
-alias ssh-config='sublime ~/.ssh/config'
+alias ssh-config='subl ~/.ssh/config'
 alias show-config='cat ~/.ssh/config'
-alias .zshrc='sublime ~/.zshrc'
+alias .zshrc='subl ~/.zshrc'
