@@ -18,6 +18,8 @@ echo "setting up npm global packages"
 sh npms.sh
 echo "install python"
 brew install python
+echo "intall gpg"
+brew install gpg
 echo "install mackup"
 brew install mackup
 echo "restoring mackup settings"
