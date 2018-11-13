@@ -14,12 +14,14 @@ github-desktop
 glueprint
 google-chrome
 hyper
+insomnia
 iterm2
 java
 keka
 macdown
 mamp
 recordit
+sequel-pro
 sitesucker
 skitch
 skype
@@ -27,6 +29,7 @@ slack
 spectacle
 spotify
 sublime-text
+tower
 transmission
 transmit
 vlc
