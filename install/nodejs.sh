@@ -3,10 +3,10 @@ brew install nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # add that so is loaded every time
-echo "source $(brew --prefix nvm)/nvm.sh" >> ~/DotFiles/zshes/path.zsh
+# echo "source $(brew --prefix nvm)/nvm.sh" >> ~/DotFiles/zshes/path.zsh
 
 # specify node.js version here
-version=4.0.0
+version=8.4.0
 nvm install $version
 npm install -g npm@latest
 nvm use $version
