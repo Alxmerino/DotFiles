@@ -1,6 +1,12 @@
-## Items to fix after first setup
+## Items to fix or need to be added to installation
 - Sublime Text 3 sym links
 - Mackup restore
+- Install yarn
+- Properly install NVM
 - Node
-- Compass
-- Brew wget and others
+- Docker
+- ~Compass~
+- Brew 
+  - wget
+  - ansible
+  - httpie (CLI REST client)

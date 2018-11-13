@@ -13,7 +13,6 @@ flux
 github-desktop
 glueprint
 google-chrome
-hyper
 insomnia
 iterm2
 java
