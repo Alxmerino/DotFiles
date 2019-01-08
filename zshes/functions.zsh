@@ -48,3 +48,15 @@ stt() {
 		sublime $1
 	fi
 }
+
+# Retrieve and copy my public SSH key
+mykey() {
+	if [[ "$1" == "" ]]; then
+		key="id_rsa.pub"
+	else
+		key=$1
+	fi
+
+	cat ~/.ssh/$key | pbcopy
+	echo "Your $key is now in you clipboard"
+}
