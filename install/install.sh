@@ -12,23 +12,13 @@ echo "downloading cli and vim items"
 sh shell.sh
 echo "downloading homebrew and cask apps"
 sh apps.sh
-echo "installing node"
+echo "Installing node"
 sh nodejs.sh
 echo "setting up npm global packages"
 sh npms.sh
-echo "install python"
-brew install python
-echo "intall gpg"
-brew install gpg
-echo "Install git-crypt"
-brew install git-crypt
-echo "install mackup"
-brew install mackup
-echo "restoring mackup settings"
-$dry mackup restore
-echo "install AWS CLI"
-brew install awscli
-echo "installing global composer packages"
+echo "Installing brew packages"
+sh brew.sh
+echo "Installing global composer packages"
 sh composer.sh
 echo "syncing sublime packages"
 sh sublime.sh
