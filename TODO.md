@@ -6,7 +6,3 @@
 - Node
 - Docker
 - ~Compass~
-- Brew 
-  - wget
-  - ansible
-  - httpie (CLI REST client)
