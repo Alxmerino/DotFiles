@@ -3,14 +3,12 @@ aerial
 alfred
 appcleaner
 bartender
-codebox
 dash
 diskwave
 divvy
 evernote
 firefox
 flux
-github-desktop
 glueprint
 google-chrome
 insomnia
@@ -21,7 +19,6 @@ macdown
 mamp
 recordit
 sequel-pro
-sitesucker
 skitch
 skype
 slack
@@ -33,4 +30,3 @@ transmission
 transmit
 vlc
 zeplin
-zooom
