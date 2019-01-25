@@ -19,6 +19,7 @@ java
 keka
 macdown
 mamp
+quicklook-json
 recordit
 sequel-pro
 skitch
