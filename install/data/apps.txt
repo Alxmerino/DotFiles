@@ -20,6 +20,7 @@ keka
 macdown
 mamp
 quicklook-json
+qlcolorcode
 recordit
 sequel-pro
 skitch
