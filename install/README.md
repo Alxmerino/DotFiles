@@ -30,3 +30,12 @@ with the ```--dry-run``` in progress
 
 ## Known Issues
 - We'll see
+
+## Install Manually
+- Python
+- Docker via ddev
+- DiplayLink Manager
+- +Logi Optinos (Keyboard + Mouse)
+- Monosnap
+- Toggl Time Tracker
+- Zooom2
