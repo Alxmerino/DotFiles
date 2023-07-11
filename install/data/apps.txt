@@ -5,8 +5,14 @@ diskwave
 google-chrome
 iterm2
 keka
+qlcolorcode
+quicklook-json
+tableplus
 slack
 spectacle
 spotify
+sublime-text
+tower
 transmit
+vlc
 zooom

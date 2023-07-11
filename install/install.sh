@@ -11,7 +11,7 @@ echo "Downloading cli and vim items"
 sh shell.sh
 echo "Downloading homebrew and cask apps"
 sh apps.sh
-echo "installing node"
+echo "Installing node"
 sh nodejs.sh
 echo "Install python"
 echo "Install python manually as needed"
