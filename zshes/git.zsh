@@ -1,6 +1,1 @@
-alias cm='git commit'
-alias fetch='git fetch'
-alias clean='git clean -f -d'
-alias stash='git stash'
-alias stash:list='git stash list --date=local'
-alias stash:pop='git stash pop'
+# Use ZSH's built-in git aliases

@@ -7,23 +7,20 @@ fi
 # export dry for the other scripts
 export dry=$dry
 
-
-echo "downloading cli and vim items"
+echo "Downloading cli and vim items"
 sh shell.sh
-echo "downloading homebrew and cask apps"
+echo "Downloading homebrew and cask apps"
 sh apps.sh
 echo "installing node"
 sh nodejs.sh
-echo "setting up npm global packages"
-sh npms.sh
-echo "install python"
-brew install python
-echo "install mackup"
-brew install mackup
-echo "restoring mackup settings"
-$dry mackup restore
-echo "installing global composer packages"
-sh composer.sh
-echo "syncing sublime packages"
-sh sublime.sh
+echo "Install python"
+echo "Install python manually as needed"
+echo "Install mackup"
+echo "Reconfigure mackup settings"
+#brew install mackup
+#echo "Restoring mackup settings"
+#$dry mackup restore
+echo "Install composer"
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
 echo "You're good to go"

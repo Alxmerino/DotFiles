@@ -6,10 +6,10 @@ source $(brew --prefix nvm)/nvm.sh
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/DotFiles/zshes/path.zsh
 
 # specify node.js version here
-version=4.0.0
-nvm install $version
+nvm install --lts
 npm install -g npm@latest
 nvm use $version
+nvm alias default node
 
 # copy active version into usr/local
 # source: https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps

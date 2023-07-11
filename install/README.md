@@ -1,17 +1,14 @@
 # New Computer Setup Install Scripts
 Oh, new computer?? You fancy huh?
 
-## Disclaimer 
-This whole repo was largely inspired(stolen) including this README from https://github.com/khaliqgant/Configuration-Files by [@khaliqgant](https://github.com/khaliqgant/) and modified to suit my needs.
-
 ## Steps
-1. Run Tests first! Then, Install Dropbox & Git
-2. Once have dropbox set up, run the start.sh there?
+1. Run Tests first! `--dry-run` Then, Install Git
+2. Install Oh-my-zsh `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 3. Clone this repo and run install/install.sh
-4. install.sh then calls a few different shell scripts which will install apps on apps on apps
+4. install.sh then calls a few different shell scripts which will install all the things
 
 ## What is being installed
-* SSH config (via Dropbox start.sh?)
+* SSH config (via Dropbox)
 * This repo
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * Adds [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
@@ -32,10 +29,4 @@ with the ```--dry-run``` in progress
 * Add these settings to iTerm2 https://www.evernote.com/l/Ak3DMZprolxH5Il3UPeCeBIP0omCuIHThcQ
 
 ## Known Issues
-* Using nvm to manage node.js versions
-* TL;DR run npms.sh twice:
-In the nodesh.sh have a command that copies the nvm specific binaries to the usr/local
-however that doesn't copy over what is needed for the specific npm libraries
-so binaries are created for whatever is in the npm.txt file. Once npm
-is in the usr/local can run the npms.sh again to overwrite the previously 
-copied over npm binaries. 
+- We'll see

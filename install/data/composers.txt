@@ -1,3 +1,0 @@
-eecli/eecli
-phpunit/phpunit
-laravel/envoy

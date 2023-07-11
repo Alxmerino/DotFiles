@@ -6,7 +6,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell" # default
-ZSH_THEME="avit"
+# ZSH_THEME="avit"
+ZSH_THEME="bureau"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -46,11 +47,13 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting laravel)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# Local Bin + Python
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -81,16 +84,27 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # MySQL
-alias mysql="/Applications/MAMP/Library/bin/mysql"
-alias mysqldump="/Applications/MAMP/Library/bin/mysqldump"
+# alias mysql="/Applications/MAMP/Library/bin/mysql"
+# alias mysqldump="/Applications/MAMP/Library/bin/mysqldump"
 
-export PATH=/usr/local/php5/bin:$PATH
+# PHP 8.0
+export export PATH="/usr/local/opt/php@8.0/bin:$PATH"
+export export PATH="/usr/local/opt/php@8.0/sbin:$PATH"
+
+# Config Files
+source ~/DotFiles/zshes/config.zsh
+
+# Docker aliases
+source ~/DotFiles/zshes/docker.zsh
+
+# Folder Nav
+source ~/DotFiles/zshes/env.zsh
 
 # Folder Nav
 source ~/DotFiles/zshes/folder-nav.zsh
 
-# Config Files
-source ~/DotFiles/zshes/config.zsh
+# Functions
+source ~/DotFiles/zshes/functions.zsh
 
 # Git aliases
 source ~/DotFiles/zshes/git.zsh
@@ -103,28 +117,27 @@ source ~/DotFiles/zshes/path.zsh
 # directory that contains an .nvmrc file with a string 
 # telling nvm which node to use
 # https://github.com/creationix/nvm#zsh
-autoload -U add-zsh-hook
-load-nvmrc() {
-  local node_version="$(nvm version)"
-  local nvmrc_path="$(nvm_find_nvmrc)"
+# autoload -U add-zsh-hook
+# load-nvmrc() {
+#   local node_version="$(nvm version)"
+#   local nvmrc_path="$(nvm_find_nvmrc)"
 
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+#   if [ -n "$nvmrc_path" ]; then
+#     local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
 
-    if [ "$nvmrc_node_version" != "N/A" ] && [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm install
-    fi
-  elif [ "$node_version" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-
-# Functions
-source ~/DotFiles/zshes/functions.zsh
+#     if [ "$nvmrc_node_version" != "N/A" ] && [ "$nvmrc_node_version" != "$node_version" ]; then
+#       nvm install
+#     fi
+#   elif [ "$node_version" != "$(nvm version default)" ]; then
+#     echo "Reverting to nvm default version"
+#     nvm use default
+#   fi
+# }
+# add-zsh-hook chpwd load-nvmrc
+# load-nvmrc
 
 # Aliases
 # restart the shell
 alias restart='exec -l $SHELL'
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
