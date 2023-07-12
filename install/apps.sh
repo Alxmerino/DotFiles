@@ -7,5 +7,5 @@ apps=$(<data/apps.txt)
 echo "Installing all the apps"
 for app in $apps
 do
-    $dry brew cask install $app
+    $dry brew install $app --cask
 done
