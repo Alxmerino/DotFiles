@@ -18,3 +18,5 @@ echo "Install HTTPie"
 brew install httpie
 echo "Install Yarn"
 brew install yarn
+echo "Install Hummingbird"
+brew install finestructure/hummingbird/hummingbird
